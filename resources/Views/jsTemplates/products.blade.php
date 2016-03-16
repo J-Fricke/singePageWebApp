@@ -1,0 +1,31 @@
+<script id="products" type="text/html">
+    <h1>Products</h1>
+    <table id='productsTable' class="table table-striped">
+        <thead>
+        <tr>
+            <th>MSRP</th>
+            <th>buyPrice</th>
+            <th>productCode</th>
+            <th>productDescription</th>
+            <th>productLine</th>
+            <th>productName</th>
+            <th>productScale</th>
+            <th>productVendor</th>
+            <th>quantityInStock</th>
+        </tr>
+        </thead>
+        @{{#products}}
+        <tr>
+            <td>@{{MSRP}}</td>
+            <td>@{{buyPrice}}</td>
+            <td>@{{productCode}}</td>
+            <td>@{{productDescription}}</td>
+            <td>@{{productLine}}</td>
+            <td>@{{productName}}</td>
+            <td>@{{productScale}}</td>
+            <td>@{{productVendor}}</td>
+            <td>@{{quantityInStock}}</td>
+        </tr>
+        @{{/products}}
+    </table>
+</script>

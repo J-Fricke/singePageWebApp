@@ -1,0 +1,39 @@
+<script id="customers" type="text/html">
+    <h1>Customers</h1>
+    <table id='customersTable' class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>address1</th>
+            <th>address2</th>
+            <th>city</th>
+            <th>state</th>
+            <th>postalCode</th>
+            <th>country</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>creditLimit</th>
+            <th>phone</th>
+            <th>sales Rep ID</th>
+        </tr>
+        </thead>
+        @{{#customers}}
+        <tr>
+            <td>@{{customerNumber}}</td>
+            <td>@{{customerName}}</td>
+            <td>@{{addressLine1}}</td>
+            <td>@{{addressLine2}}</td>
+            <td>@{{city}}</td>
+            <td>@{{state}}</td>
+            <td>@{{postalCode}}</td>
+            <td>@{{country}}</td>
+            <td>@{{contactFirstName}}</td>
+            <td>@{{contactLastName}}</td>
+            <td>@{{creditLimit}}</td>
+            <td>@{{phone}}</td>
+            <td>@{{salesRepEmployeeNumber}}</td>
+        </tr>
+        @{{/customers}}
+    </table>
+</script>

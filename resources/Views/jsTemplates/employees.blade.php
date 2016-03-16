@@ -1,0 +1,29 @@
+<script id="employees" type="text/html">
+    <h1>Employees</h1>
+    <table id='employeesTable' class="table table-striped">
+        <thead>
+        <tr>
+            <th>email</th>
+            <th>employeeNumber</th>
+            <th>extension</th>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>jobTitle</th>
+            <th>officeCode</th>
+            <th>reportsTo</th>
+        </tr>
+        </thead>
+        @{{#employees}}
+        <tr>
+            <td>@{{email}}</td>
+            <td>@{{employeeNumber}}</td>
+            <td>@{{extension}}</td>
+            <td>@{{firstName}}</td>
+            <td>@{{lastName}}</td>
+            <td>@{{jobTitle}}</td>
+            <td>@{{officeCode}}</td>
+            <td>@{{reportsTo}}</td>
+        </tr>
+        @{{/employees}}
+    </table>
+</script>
