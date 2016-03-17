@@ -85,8 +85,7 @@ class ApiController
         try {
             $this->loginService->login($this->auth, $userdata);
         } catch (Exception $e) {
-            print_r($e->xdebug_message);
-            return $this->createJsonResponse($response, ['error'=> [['message' => 'Problem logging in, please check your credentials and try again']]], 401);
+fix: remove            return $this->createJsonResponse($response, ['error'=> [['message' => 'Problem logging in, please check your credentials and try again']]], 401);
         } finally {
             if ($this->auth->isValid()) {
                 return $this->createJsonResponse($response, 'Authorized', 200);
