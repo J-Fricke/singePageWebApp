@@ -66,6 +66,8 @@ class MainController
      */
     private function responseTemplate(ResponseInterface $response, $view, array $data)
     {
-        return $response->getBody()->write($this->blade->view()->make($view, $data));
+        $response->getBody()->write($this->blade->view()->make($view, $data));
+
+        return $response;
     }
 }
