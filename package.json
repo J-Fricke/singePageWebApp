@@ -12,6 +12,7 @@
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
     "datatables.net": "^1.10.11",
+    "datatables.net-dt": "^1.10.11",
     "datatables.net-responsive": "^2.0.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.3",

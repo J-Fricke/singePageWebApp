@@ -18,14 +18,14 @@ gulp.task('build-js', function() {
 });
 
 gulp.task('build-css', function() {
-    return gulp.src(['./node_modules/bootstrap/dist/css/*.min.css', './node_modules/datatables/media/css/*.min.css', './app/Styles/main.css'])
+    return gulp.src(['./node_modules/bootstrap/dist/css/*.min.css', './node_modules/datatables.net-dt/media/css/*.min.css', './app/Styles/main.css'])
         .pipe(concat('main.css'))
         .pipe(cleancss())
         .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('build-images', function() {
-   return gulp.src(['./node_modules/datatables/media/images/*.*'])
+   return gulp.src(['./node_modules/datatables.net-dt/media/images/*.*'])
        .pipe(gulp.dest('./public/images'));
 });
 
