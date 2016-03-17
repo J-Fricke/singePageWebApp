@@ -61,7 +61,9 @@ function postLogin(form) {
             }
         },
         error: function (e) {
-            console.log(e.statusCode().status, e.statusCode().statusText, e.statusCode().responseText);
+            console.log(e.status, e.statusText, e.responseText);
+            $("#main").html(ich.loginFormTemplate(JSON.parse(e.responseText)));
+            bindLoginSubmit();
         }
     });
 }
