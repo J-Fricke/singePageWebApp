@@ -40,7 +40,7 @@ class MainController
      */
     public function getIndex(ServerRequestInterface $request, ResponseInterface $response)
     {
-        return $this->responseTemplate($response, 'index', [], 200);
+        return $this->responseTemplate($response, 'index', []);
     }
 
     /**
