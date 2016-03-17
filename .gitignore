@@ -1,8 +1,12 @@
 /vendor/
 /node_modules/
-/public/css/
-/public/js/
-/public/fonts/
-/public/images/
+/public/css/*
+!/public/css/.gitkeep
+/public/js/*
+!/public/js/.gitkeep
+/public/fonts/*
+!/public/fonts/.gitkeep
+/public/images/*
+!/public/images/.gitkeep
 /resources/Cache/*.php
 .env
