@@ -15,11 +15,11 @@ class MainController
     /**
      * @var string
      */
-    protected $views = __DIR__.'/../../resources/Views';
+    protected $views = '/../../resources/Views';
     /**
      * @var string
      */
-    protected $cache = __DIR__.'/../../resources/Cache';
+    protected $cache = '/../../resources/Cache';
     /**
      * @var Blade
      */
@@ -30,6 +30,8 @@ class MainController
      */
     public function __construct()
     {
+        $this->views = __DIR__.$this->views;
+        $this->cache = __DIR__.$this->cache;
         $this->blade = new Blade($this->views, $this->cache);
     }
 
